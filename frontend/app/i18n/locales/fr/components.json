@@ -1,0 +1,23 @@
+{
+    "layout": {},
+    "user_dropdown": {
+      "account": "Compte",
+      "logout": "Se déconnecter",
+      "user_language_submenu": {
+        "choose_language": "Choisir la langue"
+      },
+      "user_theme_submenu": {
+        "choose_theme": "Choisir le thème",
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Système"
+      }
+    },
+    "user": {
+      "user_card": {
+        "login": "Veuillez vous connecter",
+        "guest": "Invité"
+      }
+    }
+  }
+  

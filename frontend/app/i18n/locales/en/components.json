@@ -1,0 +1,22 @@
+{
+  "layout": {},
+  "user_dropdown": {
+    "account": "Account",
+    "logout": "Logout",
+    "user_language_submenu": {
+      "choose_language": "Choose language"
+    },
+    "user_theme_submenu": {
+      "choose_theme": "Choose theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "user": {
+    "user_card": {
+      "login": "PLease Login",
+      "guest": "Guest"
+    }
+  }
+}

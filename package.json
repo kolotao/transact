@@ -1,0 +1,35 @@
+{
+  "name": "transact",
+  "version": "1.0.0",
+  "description": "A simple web application for making transactions between accounts",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm run install:backend && npm run install:frontend",
+    "install:backend": "node scripts/setupBackend.js",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kolotao/transact.git"
+  },
+  "keywords": [
+    "nex",
+    "react",
+    "ts",
+    "transactions",
+    "acconts",
+    "adonis"
+  ],
+  "author": "kolotao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kolotao/transact/issues"
+  },
+  "homepage": "https://github.com/kolotao/transact#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

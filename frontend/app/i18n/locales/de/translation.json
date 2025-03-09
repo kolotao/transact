@@ -1,0 +1,174 @@
+{
+  "test": "Transaktion",
+  "title": "Bankensystem",
+  "breadcrumbs": {
+    "auth": "Autorisierung",
+    "login": "Anmeldung",
+    "register": "Registrierung",
+    "dashboard": "Übersicht",
+    "users": "Benutzer",
+    "accounts": "Konten",
+    "profile": "Profil",
+    "transactions": "Transaktionen"
+  },
+  "login": "Anmeldung",
+  "register": "Registrierung",
+  "errors": {
+    "ACCOUNT_NOT_FOUND": "Konto nicht gefunden.",
+    "VALIDATION_FAILURE": "Sie haben ungültige Daten eingegeben.",
+    "INTERNAL_SERVER_ERROR": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später noch einmal.",
+    "UNEXPECTED_ERROR": "Ein unerwarteter Fehler ist aufgetreten.",
+    "INVALID_CREDENTIALS": "Benutzer mit dieser E-Mail und diesem Passwort nicht gefunden."
+  },
+  "pages": {
+    "login": {
+      "register_button": "Registrieren",
+      "meta": {
+        "title": "Anmeldung",
+        "description": "Melden Sie sich in Ihrem Konto an"
+      },
+      "ask_register": "Sie haben kein Konto?",
+      "form": {
+        "email": "E-Mail",
+        "password": "Passwort",
+        "submit_button": "Anmelden",
+        "errors": {
+          "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+          "password": "Bitte geben Sie ein Passwort ein.",
+          "password_length": "Das Passwort muss mindestens 4 Zeichen lang sein."
+        }
+      }
+    },
+    "register": {
+      "login_button": "Anmelden",
+      "meta": {
+        "title": "Registrierung",
+        "description": "Neues Konto registrieren"
+      },
+      "ask_login": "Haben Sie bereits ein Konto?",
+      "form": {
+        "email": "E-Mail",
+        "password": "Passwort",
+        "first_name": "Vorname",
+        "last_name": "Nachname",
+        "submit_button": "Registrieren",
+        "errors": {
+          "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+          "password": "Bitte geben Sie ein Passwort ein.",
+          "first_name": "Bitte geben Sie Ihren Vornamen ein.",
+          "last_name": "Bitte geben Sie Ihren Nachnamen ein.",
+          "password_length": "Das Passwort muss mindestens 4 Zeichen lang sein."
+        }
+      }
+    },
+    "dashboard": {
+      "meta": {
+        "title": "Übersicht",
+        "description": "Dashboard-Statistiken"
+      },
+      "register_button": "Registrieren",
+      "login_button": "Anmelden",
+      "stats_block": {
+        "retry_button": "Erneut versuchen",
+        "update_button": "Aktualisieren",
+        "total_users": "Gesamtzahl der Benutzer",
+        "total_accounts": "Gesamtzahl der Konten",
+        "total_transactions": "Gesamtzahl der Transaktionen"
+      }
+    },
+    "accounts": {
+      "meta": {
+        "title": "Konten",
+        "description": "Liste meiner Konten"
+      },
+      "retry_button": "Erneut versuchen",
+      "create_account_button": "Konto erstellen",
+      "search_currency": "Währung suchen",
+      "columns": {
+        "id": "ID",
+        "name": "Name",
+        "balance": "Kontostand",
+        "currency": "Währung",
+        "created_at": "Erstellt am",
+        "actions": {
+          "actions": "Aktionen",
+          "details_button": "Details",
+          "edit_button": "Bearbeiten",
+          "delete_button": "Löschen",
+          "open_button": "Menü öffnen",
+          "copy_id_button": "ID kopieren"
+        }
+      },
+      "new": {
+        "meta": {
+          "title": "Konto erstellen",
+          "description": "Ein neues Konto erstellen"
+        },
+        "title": "Neues Konto erstellen",
+        "description": "Wenn Sie ein neues Konto erstellen, erhalten Sie automatisch eine Überweisung von einem Banknutzer in Höhe von 100 der ausgewählten Währung zum Testen.",
+        "form": {
+          "currency": "Währung",
+          "select_currency": "Wählen Sie eine Währung aus",
+          "submit_button": "Erstellen",
+          "errors": {
+            "currency": "Bitte wählen Sie eine Währung aus."
+          }
+        }
+      },
+      "account": {
+        "meta": {
+          "title": "Konto",
+          "description": "Kontodetails"
+        },
+        "no_incoming_trx": "Keine eingehenden Transaktionen",
+        "no_outgoing_trx": "Keine ausgehenden Transaktionen",
+        "edit_account_button": "Konto bearbeiten",
+        "incoming_trx": "Eingehende Transaktionen",
+        "outgoing_trx": "Ausgehende Transaktionen"
+      }
+    },
+    "transactions": {
+      "meta": {
+        "title": "Transaktionen",
+        "description": "Liste der Transaktionen"
+      },
+      "retry_button": "Erneut versuchen",
+      "create_trx_button": "Transaktion durchführen",
+      "columns": {
+        "id": "ID",
+        "from_account_id": "Quellkonto-ID",
+        "to_account_id": "Zielkonto-ID",
+        "amount": "Betrag",
+        "currency": "Währung",
+        "description": "Beschreibung",
+        "created_at": "Erstellt am"
+      },
+      "new": {
+        "meta": {
+          "title": "Transaktion erstellen",
+          "description": "Eine neue Transaktion erstellen"
+        },
+        "title": "Neue Transaktion erstellen",
+        "form": {
+          "from_account": "Quellkonto",
+          "to_account": "Zielkonto",
+          "to_account_placeholder": "Empfänger-Konto-ID",
+          "amount": "Betrag",
+          "description": "Beschreibung",
+          "description_placeholder": "Optionale Beschreibung",
+          "select_account": "Wählen Sie Ihr Konto",
+          "balance": "Kontostand",
+          "same_currency": "Sie senden {{amount}} {{currency}}",
+          "converted_info": "Das Senden von {{amount}} {{fromCurrency}} kostet ungefähr {{converted}} {{toCurrency}}",
+          "exchange_rate_error": "Wechselkurs nicht gefunden",
+          "submit_button": "Transaktion erstellen",
+          "errors": {
+            "from_account": "Wählen Sie ein Quellkonto",
+            "to_account": "Geben Sie ein Zielkonto ein",
+            "amount": "Der Betrag muss mindestens 1 betragen"
+          }
+        }
+      }
+    }
+  }
+}

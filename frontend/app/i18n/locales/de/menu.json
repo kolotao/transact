@@ -1,0 +1,9 @@
+{
+    "main_menu": {
+      "dashboard": "Übersicht",
+      "accounts": "Konten",
+      "transactions": "Transaktionen",
+      "Users": "Benutzer"
+    }
+  }
+  

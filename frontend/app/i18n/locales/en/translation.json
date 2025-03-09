@@ -1,0 +1,174 @@
+{
+  "test": "Transact",
+  "title": "Banking System",
+  "breadcrumbs": {
+    "auth": "Authorization",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "users": "Users",
+    "accounts": "Accounts",
+    "profile": "Profile",
+    "transactions": "Transactions"
+  },
+  "login": "Login",
+  "register": "Register",
+  "errors": {
+    "ACCOUNT_NOT_FOUND": "Account not found.",
+    "VALIDATION_FAILURE": "You entered invalid data.",
+    "INTERNAL_SERVER_ERROR": "Something went wrong. Please try again later.",
+    "UNEXPECTED_ERROR": "An unexpected error occurred.",
+    "INVALID_CREDENTIALS": "User with this email and password not found."
+  },
+  "pages": {
+    "login": {
+      "register_button": "Register",
+      "meta": {
+        "title": "Login",
+        "description": "Login in to your account"
+      },
+      "ask_register": "Don't have an account?",
+      "form": {
+        "email": "Email",
+        "password": "Password",
+        "submit_button": "Login",
+        "errors": {
+          "email": "Please enter a valid email address.",
+          "password": "Please enter a password.",
+          "password_length": "Password must be at least 4 characters long."
+        }
+      }
+    },
+    "register": {
+      "login_button": "Login",
+      "meta": {
+        "title": "Register",
+        "description": "Register a new account"
+      },
+      "ask_login": "Already have an account?",
+      "form": {
+        "email": "Email",
+        "password": "Password",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "submit_button": "Register",
+        "errors": {
+          "email": "Please enter a valid email address.",
+          "password": "Please enter a password.",
+          "first_name": "Please enter your first name.",
+          "last_name": "Please enter your last name.",
+          "password_length": "Password must be at least 4 characters long."
+        }
+      }
+    },
+    "dashboard": {
+      "meta": {
+        "title": "Dashboard",
+        "description": "Dashboard statistics"
+      },
+      "register_button": "Register",
+      "login_button": "Login",
+      "stats_block": {
+        "retry_button": "Retry",
+        "update_button": "Update",
+        "total_users": "Total Users",
+        "total_accounts": "Total Accounts",
+        "total_transactions": "Total Transactions"
+      }
+    },
+    "accounts": {
+      "meta": {
+        "title": "Accounts",
+        "description": "List of my accounts"
+      },
+      "retry_button": "Retry",
+      "create_account_button": "Create Account",
+      "search_currency": "Search currency",
+      "columns": {
+        "id": "ID",
+        "name": "Name",
+        "balance": "Balance",
+        "currency": "Currency",
+        "created_at": "Created At",
+        "actions": {
+          "actions": "Actions",
+          "details_button": "Details",
+          "edit_button": "Edit",
+          "delete_button": "Delete",
+          "open_button": "Open menu",
+          "copy_id_button": "Copy ID"
+        }
+      },
+      "new": {
+        "meta": {
+          "title": "Create Account",
+          "description": "Create a new account"
+        },
+        "title": "Create new Account",
+        "description": "When you create a new account, you will automatically receive a transfer from a bank user in the amount of 100 of the selected currency for testing.",
+        "form": {
+          "currency": "Currency",
+          "select_currency": "Select currency",
+          "submit_button": "Create",
+          "errors": {
+            "currency": "Please select a currency."
+          }
+        }
+      },
+      "account": {
+        "meta": {
+          "title": "Account",
+          "description": "Account details"
+        },
+        "no_incoming_trx": "No incoming transactions",
+        "no_outgoing_trx": "No outgoing transactions",
+        "edit_account_button": "Edit Account",
+        "incoming_trx": "Incoming Transactions",
+        "outgoing_trx": "Outgoing Transactions"
+      }
+    },
+    "transactions": {
+      "meta": {
+        "title": "Transactions",
+        "description": "List of transactions"
+      },
+      "retry_button": "Retry",
+      "create_trx_button": "Make a translation",
+      "columns": {
+        "id": "ID",
+        "from_account_id": "From Account ID",
+        "to_account_id": "To Account ID",
+        "amount": "Amount",
+        "currency": "Currency",
+        "description": "Description",
+        "created_at": "Created At"
+      },
+      "new": {
+        "meta": {
+          "title": "Create Transaction",
+          "description": "Create a new transaction"
+        },
+        "title": "Create new Transaction",
+        "form": {
+          "from_account": "From Account",
+          "to_account": "To Account",
+          "to_account_placeholder": "Recipient account ID",
+          "amount": "Amount",
+          "description": "Description",
+          "description_placeholder": "Optional description",
+          "select_account": "Choose your account",
+          "balance": "Balance",
+          "same_currency": "You'll send {{amount}} {{currency}}",
+          "converted_info": "Sending {{amount}} {{fromCurrency}} will cost approximately {{converted}} {{toCurrency}}",
+          "exchange_rate_error": "Exchange rate not found",
+          "submit_button": "Create Transaction",
+          "errors": {
+            "from_account": "Choose a sender account",
+            "to_account": "Enter a recipient account",
+            "amount": "Amount must be at least 1"
+          }
+        }
+      }
+    }
+  }
+}

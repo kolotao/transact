@@ -1,0 +1,9 @@
+{
+    "main_menu": {
+      "dashboard": "Tableau de bord",
+      "accounts": "Comptes",
+      "transactions": "Transactions",
+      "Users": "Utilisateurs"
+    }
+  }
+  

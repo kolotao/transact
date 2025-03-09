@@ -1,0 +1,174 @@
+{
+  "test": "Transiger",
+  "title": "Système bancaire",
+  "breadcrumbs": {
+    "auth": "Autorisation",
+    "login": "Connexion",
+    "register": "Inscription",
+    "dashboard": "Tableau de bord",
+    "users": "Utilisateurs",
+    "accounts": "Comptes",
+    "profile": "Profil",
+    "transactions": "Transactions"
+  },
+  "login": "Connexion",
+  "register": "Inscription",
+  "errors": {
+    "ACCOUNT_NOT_FOUND": "Compte non trouvé.",
+    "VALIDATION_FAILURE": "Vous avez saisi des données invalides.",
+    "INTERNAL_SERVER_ERROR": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "UNEXPECTED_ERROR": "Une erreur inattendue s'est produite.",
+    "INVALID_CREDENTIALS": "Aucun utilisateur trouvé avec cet e-mail et ce mot de passe."
+  },
+  "pages": {
+    "login": {
+      "register_button": "S'inscrire",
+      "meta": {
+        "title": "Connexion",
+        "description": "Connectez-vous à votre compte"
+      },
+      "ask_register": "Vous n'avez pas de compte ?",
+      "form": {
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "submit_button": "Connexion",
+        "errors": {
+          "email": "Veuillez saisir une adresse e-mail valide.",
+          "password": "Veuillez saisir un mot de passe.",
+          "password_length": "Le mot de passe doit comporter au moins 4 caractères."
+        }
+      }
+    },
+    "register": {
+      "login_button": "Connexion",
+      "meta": {
+        "title": "Inscription",
+        "description": "Créer un nouveau compte"
+      },
+      "ask_login": "Vous avez déjà un compte ?",
+      "form": {
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "first_name": "Prénom",
+        "last_name": "Nom de famille",
+        "submit_button": "S'inscrire",
+        "errors": {
+          "email": "Veuillez saisir une adresse e-mail valide.",
+          "password": "Veuillez saisir un mot de passe.",
+          "first_name": "Veuillez saisir votre prénom.",
+          "last_name": "Veuillez saisir votre nom de famille.",
+          "password_length": "Le mot de passe doit comporter au moins 4 caractères."
+        }
+      }
+    },
+    "dashboard": {
+      "meta": {
+        "title": "Tableau de bord",
+        "description": "Statistiques du tableau de bord"
+      },
+      "register_button": "S'inscrire",
+      "login_button": "Connexion",
+      "stats_block": {
+        "retry_button": "Réessayer",
+        "update_button": "Mettre à jour",
+        "total_users": "Nombre total d'utilisateurs",
+        "total_accounts": "Nombre total de comptes",
+        "total_transactions": "Nombre total de transactions"
+      }
+    },
+    "accounts": {
+      "meta": {
+        "title": "Comptes",
+        "description": "Liste de vos comptes"
+      },
+      "retry_button": "Réessayer",
+      "create_account_button": "Créer un compte",
+      "search_currency": "Rechercher une devise",
+      "columns": {
+        "id": "ID",
+        "name": "Nom",
+        "balance": "Solde",
+        "currency": "Devise",
+        "created_at": "Date de création",
+        "actions": {
+          "actions": "Actions",
+          "details_button": "Détails",
+          "edit_button": "Modifier",
+          "delete_button": "Supprimer",
+          "open_button": "Ouvrir le menu",
+          "copy_id_button": "Copier l'ID"
+        }
+      },
+      "new": {
+        "meta": {
+          "title": "Créer un compte",
+          "description": "Créer un nouveau compte"
+        },
+        "title": "Créer un nouveau compte",
+        "description": "Lorsque vous créez un nouveau compte, vous recevrez automatiquement un transfert d'un utilisateur de la banque d'un montant de 100 de la devise sélectionnée pour les tests.",
+        "form": {
+          "currency": "Devise",
+          "select_currency": "Sélectionner une devise",
+          "submit_button": "Créer",
+          "errors": {
+            "currency": "Veuillez sélectionner une devise."
+          }
+        }
+      },
+      "account": {
+        "meta": {
+          "title": "Compte",
+          "description": "Détails du compte"
+        },
+        "no_incoming_trx": "Aucune transaction entrante",
+        "no_outgoing_trx": "Aucune transaction sortante",
+        "edit_account_button": "Modifier le compte",
+        "incoming_trx": "Transactions entrantes",
+        "outgoing_trx": "Transactions sortantes"
+      }
+    },
+    "transactions": {
+      "meta": {
+        "title": "Transactions",
+        "description": "Liste des transactions"
+      },
+      "retry_button": "Réessayer",
+      "create_trx_button": "Effectuer une transaction",
+      "columns": {
+        "id": "ID",
+        "from_account_id": "ID du compte source",
+        "to_account_id": "ID du compte destinataire",
+        "amount": "Montant",
+        "currency": "Devise",
+        "description": "Description",
+        "created_at": "Date de création"
+      },
+      "new": {
+        "meta": {
+          "title": "Créer une transaction",
+          "description": "Créer une nouvelle transaction"
+        },
+        "title": "Créer une nouvelle transaction",
+        "form": {
+          "from_account": "Compte source",
+          "to_account": "Compte destinataire",
+          "to_account_placeholder": "ID du compte destinataire",
+          "amount": "Montant",
+          "description": "Description",
+          "description_placeholder": "Description facultative",
+          "select_account": "Choisissez votre compte",
+          "balance": "Solde",
+          "same_currency": "Vous enverrez {{amount}} {{currency}}",
+          "converted_info": "Envoyer {{amount}} {{fromCurrency}} coûtera environ {{converted}} {{toCurrency}}",
+          "exchange_rate_error": "Taux de change non trouvé",
+          "submit_button": "Créer la transaction",
+          "errors": {
+            "from_account": "Choisissez un compte émetteur",
+            "to_account": "Saisissez un compte destinataire",
+            "amount": "Le montant doit être au moins de 1"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "main_menu": {
+    "dashboard": "Dashboard",
+    "accounts": "Accounts",
+    "transactions": "Transactions",
+    "Users": "Users"
+  }
+}

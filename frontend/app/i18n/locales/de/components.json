@@ -1,0 +1,23 @@
+{
+    "layout": {},
+    "user_dropdown": {
+      "account": "Konto",
+      "logout": "Abmelden",
+      "user_language_submenu": {
+        "choose_language": "Sprache auswählen"
+      },
+      "user_theme_submenu": {
+        "choose_theme": "Design auswählen",
+        "light": "Hell",
+        "dark": "Dunkel",
+        "system": "System"
+      }
+    },
+    "user": {
+      "user_card": {
+        "login": "Bitte einloggen",
+        "guest": "Gast"
+      }
+    }
+  }
+  
